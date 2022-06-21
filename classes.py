@@ -1,6 +1,3 @@
-from numpy import power
-
-
 class Fahrzeug:
     license_plate = ""
     max_speed = 0.0
@@ -260,3 +257,8 @@ class LKW(Fahrzeug):
 
     def set_trailer_volume(self, trailer_volume):
         self.trailer_volume = trailer_volume
+
+if __name__ == "__main__":
+    # Test
+    fahrzeug = FamilyCar("ABC123", 100, 0, 0, "red", True, "VW", "Golf", 100, 2, "Diesel", 10, 100, 4, 0.0, False)
+    print(fahrzeug)
